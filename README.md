@@ -1,62 +1,41 @@
-# 🚀 SARAS-AI: Satellite Fault Prediction System
+# 🛰️ SARAS-AI: Satellite Fault Prediction System
 
-**SARAS-AI** (Surveillance-Aware Responsive AI System) is a smart, real-time fault prediction system designed for satellites — starting with the **power subsystem**. It uses deep learning models (like LSTM and Transformers) to anticipate failures in satellite telemetry data and enables ground stations to act before disaster strikes.
+**SARAS-AI** (Surveillance-Aware Responsive AI System) is a cutting-edge artificial intelligence platform built to monitor, analyze, and predict faults in satellite subsystems—starting with the **power subsystem**.  
 
-> “Antariksh mein bhi ab AI ka rakhwala hoga.” 🇮🇳
+This project simulates real-time telemetry, processes critical health parameters like voltage, current, temperature, and solar input, and uses deep learning models (LSTM, Transformer) to issue early warnings and predictive alerts for spaceborne systems.
 
----
-
-## 📌 Objective
-
-Predict faults in satellite subsystems using AI, ensuring:
-- Early detection of anomalies in voltage, current, temperature, and solar input.
-- Real-time alerts via backend APIs or CLI.
-- A modular, scalable, and extendable architecture for use in **ISRO**, **DRDO**, startups, and academia.
+> 🧠 “In space, failure isn’t an option. SARAS makes sure it isn’t a surprise either.”  
 
 ---
 
-## 🔧 Features
+## 🧭 Vision
 
-- ✅ LSTM & Transformer-based AI models for time-series telemetry prediction
-- ✅ Real-time inference via FastAPI
-- ✅ Optional CLI or dashboard alerting
-- ✅ Modular data pipeline (raw → processed → prediction)
-- ✅ Scalable: easily extendable to other subsystems like propulsion, thermal, communication
+- 🚨 **Early Fault Detection**: AI-based anomaly prediction before failure strikes.
+- 🔐 **National Security Applications**: Ideal for ISRO, DRDO, private aerospace ventures.
+- 🧪 **Modular R&D Tool**: Tailored for researchers, engineers, and institutions working on satellite health monitoring.
 
 ---
 
-## 🧠 System Architecture
-[Satellite Telemetry] ↓ [Data Ingestion Layer] ← CSV / API / Simulated Input ↓ [Preprocessing] → Normalization, Outlier Handling ↓ [AI Model (LSTM / Transformer)] ↓ [Fault Predictor] ↓ [FastAPI / CLI / Dashboard Alerting]
----
+## 🧰 Features
 
-## 📂 Folder Structure
-saras-ai/ ├── app/ │   ├── main.py            # FastAPI App │   └── utils.py           # Preprocessing + Alert Logic ├── data/ │   ├── raw/ │   ├── processed/ │   └── mock_satellite_data.csv ├── models/ │   ├── lstm_model.pt │   └── transformer_model.pt ├── notebooks/ │   ├── 01_EDA.ipynb │   └── 02_Model_Training.ipynb ├── dashboard/             # Optional: React or Grafana UI ├── requirements.txt └── README.md
----
-
-## 📈 Sample Data Format
-
-| timestamp           | voltage | temperature | solar_input | current |
-|---------------------|---------|-------------|-------------|---------|
-| 2025-05-31 12:00:01 | 3.74V   | 26.4°C      | 102.3W      | 1.96A   |
-
-Use real or simulated telemetry data for training and inference.
+- ✅ **AI Models**: LSTM & Transformer-based predictions
+- ✅ **Real-Time Telemetry Simulation & Processing**
+- ✅ **FastAPI REST Server for Fault Inference**
+- ✅ **Custom CLI Alerts for Mission Control**
+- ✅ **Scalable & Extendable** to other satellite subsystems
+- ✅ **Dashboard-Ready** for Grafana / Plotly.js integration
 
 ---
 
-## 🧠 AI Models
+## ⚙️ System Architecture
 
-| Model        | Use Case                         | Libraries       |
-|--------------|----------------------------------|------------------|
-| LSTM         | Time-series prediction           | PyTorch          |
-| Transformer  | Long-sequence modeling           | PyTorch, HuggingFace |
-| Autoencoder  | Fault detection (unsupervised)   | TensorFlow / PyTorch |
 
----
-
-## ⚠️ Real-Time CLI Alert Example
-
-⚠️ [FAULT DETECTED]
-Timestamp: 2025-05-31 12:02:43
-Issue: Voltage dip below 3.2V threshold
-Model Confidence: 91.6%
-Recommendation: Switch to backup power immediately.
+  [Simulated / Real Telemetry Input]
+                ↓
+        [Data Preprocessing]
+                ↓
+       [AI Model: LSTM / Transformer]
+                ↓
+          [Fault Predictor]
+                ↓
+  [API Server / CLI Alert / Dashboard Hook]
