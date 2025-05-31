@@ -45,30 +45,6 @@ We start with **LSTM**, then upgrade to **Informer** or **TSFormer** for large-s
 
 ---
 
-## 📂 Project Folder Structure
-saras-sat-fault-ai/
-├── data/
-│   ├── raw/                   # Raw telemetry datasets (unprocessed)
-│   ├── processed/             # Cleaned and labeled data for training/testing
-│   └── mock_satellite_data.csv # Sample generated telemetry data
-├── models/                    # Trained AI models and checkpoints
-│   └── lstm_fault_predictor.pt
-├── notebooks/                 # Jupyter notebooks for EDA & model development
-│   ├── 01_EDA.ipynb
-│   └── 02_LSTM_Training.ipynb
-├── app/                       # Backend API and utilities
-│   ├── main.py                # FastAPI app entry point
-│   └── utils.py               # Helper functions for data processing
-├── dashboard/                 # Frontend UI for real-time visualization
-│   ├── src/                   # React components and assets
-│   └── public/                # Static files
-├── tests/                     # Unit and integration tests
-│   └── test_model.py
-├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation (you’re here!)
-└── .gitignore                 # Git ignore rules
----
-
 ## ⚙️ Tech Stack
 
 - **Languages**: Python 3.10
