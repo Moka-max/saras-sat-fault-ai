@@ -1,4 +1,4 @@
-# 🚀 SARAS-AI: Satellite Fault Prediction System 🛰️  
+# SARAS-AI: Satellite Fault Prediction System 🛰️  
 *A real-time AI-powered system to forecast faults in satellite subsystems.*
 
 > Developed by **Moka Uday Bhushanam**  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **SARAS-AI** (Surveillance-Aware Responsive AI System) is a deep-tech fault prediction system for satellites. It uses time-series machine learning models (LSTM, Transformer) to detect anomalies in satellite telemetry — beginning with the **Power Subsystem**.
 
@@ -24,16 +24,16 @@ The goal: build an operational prototype that can plug into ground stations, sim
 
 ---
 
-## 💼 Use Cases
+##  Use Cases
 
-- 🛰 Satellite mission operations (LEO/MEO/GEO)
-- 🚨 Fault prediction for power, thermal, and attitude subsystems
-- 🧪 Academic and industrial R&D (ISRO/DRDO)
-- 📚 Learning-grade open-source demo project
+-  Satellite mission operations (LEO/MEO/GEO)
+-  Fault prediction for power, thermal, and attitude subsystems
+-  Academic and industrial R&D (ISRO/DRDO)
+-  Learning-grade open-source demo project
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 | Model         | Use Case                     | Strengths                     | Limitations                  |
 |---------------|------------------------------|-------------------------------|------------------------------|
@@ -45,7 +45,7 @@ We start with **LSTM**, then upgrade to **Informer** or **TSFormer** for large-s
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - **Languages**: Python 3.10
 - **AI/ML**: PyTorch, NumPy, Scikit-learn
@@ -56,7 +56,7 @@ We start with **LSTM**, then upgrade to **Informer** or **TSFormer** for large-s
 
 ---
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
 # Clone the repo
 git clone https://github.com/<your-username>/saras-sat-fault-ai.git
