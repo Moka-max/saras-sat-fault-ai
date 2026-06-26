@@ -14,13 +14,13 @@ The goal: build an operational prototype that can plug into ground stations, sim
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-- ✅ LSTM and Transformer models for fault prediction
-- ⚠️ Real-time anomaly detection with alerting
-- 📈 Dashboard visualization (React.js / Grafana)
-- 📡 Mock & real satellite telemetry supported
-- 🔐 Modular backend using FastAPI
+-  LSTM and Transformer models for fault prediction
+-  Real-time anomaly detection with alerting
+-  Dashboard visualization (React.js / Grafana)
+-  Mock & real satellite telemetry supported
+-  Modular backend using FastAPI
 
 ---
 
